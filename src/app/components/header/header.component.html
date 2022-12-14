@@ -1,0 +1,37 @@
+  <div class="container">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" routerLink="home">
+            <img src="https://studentgator.com/assets/images/navbar/studentgator%20icon/logo.svg" alt="">
+        </a>
+        <button (click)="toggleNavbar()"  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" [class.show]="isOpen" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link " routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about" routerLinkActive="active">About us</a>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/programs" routerLinkActive="active">Programs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/blogs" routerLinkActive="active">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              </li>
+              <li class="nav-item">
+                    <button class=" btn btn-primary ">Logout</button>
+              </li>
+    
+          </ul>
+          
+        </div>
+      </nav>
+    
+</div>

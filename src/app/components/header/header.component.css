@@ -1,0 +1,39 @@
+
+
+.container
+{
+    background-color: #dfe0f0;
+    flex-shrink: 0;
+    display: flex;
+    position: static;
+    flex-wrap:wrap;
+    top: 0;
+    overflow:hidden;
+}
+li{
+    justify-content: space-evenly;
+    margin: 15px;
+    align-items: center;
+}
+img{
+   margin-right: 15px;
+}
+
+
+li:hover{
+    background-color: #6f77f4;
+    padding-right: 2px;
+    padding-left: 2px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all;
+    transition: .3s all ease-in-out;
+}
+li:active{
+    color: #FFF;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: #6f77f4;
+}

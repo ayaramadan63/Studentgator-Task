@@ -1,0 +1,248 @@
+<section class="intro-section d-flex justify-content-center">
+    <div class="row container">
+        <div class="col-md-6 col-12">
+            <p class="title"> More than
+                 <span>1000</span> programs in <span>80</span> 
+                Schools around the world </p>
+                <p class="desc">
+                     Filtering programs and finding the ones best suited for you has never been easier </p>            
+                     <div class="viewprograms">
+                <a >
+                    <button class="btn" style="width: 40%;">
+                        View Programs
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 justify-content-end ">
+            <img src="../../../assets/img.PNG" alt="">
+        </div>
+    </div>
+</section>
+<section id="programs-container" class="programs-container container">
+    <p class="popular-title">Most Popular Programs</p>
+    <p class="programs-number"> We found 17 Programs available for you </p>
+
+    <form >
+        <div class="row">
+            <div class="col-12 first-row">
+                <div class="row">
+                    <div class="col-xl-2 col-md-3 col-2 p-0">
+                        <div class="justify-content-around align-items-start d-none d-md-flex">
+                            <p class="sort-by" style="font-weight: 400;">Sort By</p>
+                            <button class="btn" style="color: blue;" >Reset <i class="fa fa-undo-alt" ></i></button>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-md-9 col-10 p-0" >
+                        <div class="input-group">
+                            <div class="input-group-append" style="width: 70%;">
+                                <input type="text" class="form-control" placeholder="Search for a Program">
+                              <button class="btn btn-secondary" type="button">
+                                <i class="fas fa-arrow-right"></i> </button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 second-row">
+                <div class="row" >
+                  <!--   <select > 
+                       <option value="one" *ngFor="let pro of programs">{{pro.city}}</option>
+                      </select> -->
+                   <div class="col-xl-3 col-md-3 col-3 p-0">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Select City</mat-label>
+                            <mat-select >
+                              <mat-option value="one" *ngFor="let pro of programs">{{pro.city}}</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                          
+                    </div>
+                    
+                    <div class="col-xl-6 col-md-6 col-6 p-0">
+                        <mat-form-field appearance="fill" style="width: 80%;">
+                            <mat-label>Selct Category</mat-label>
+                            <mat-select >
+                              <mat-option value="one" *ngFor="let pro of programs">{{pro.category}}</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-3 p-0">
+                        <mat-form-field appearance="fill" >
+                            <mat-label>Select School</mat-label>
+                            <mat-select >
+                              <mat-option *ngFor="let pro of programs" value="one">{{pro.level}}</mat-option>
+                            </mat-select> 
+                          </mat-form-field>
+                    </div> 
+
+                </div>
+              
+                  
+            </div>
+            <div class="col-12 third-row">
+
+                <section>
+                    <div class="row">
+                        
+                    <div class="col-xl-2 col-md-3 d-none d-md-block">
+                        <p class="language">Language</p><p class="line"></p>
+                        <mat-radio-group role="radiogroup" aria-labelledby="example-radio-group-label" 
+                        formcontrolname="language" 
+                        class="mat-radio-group example-radio-group d-flex flex-column justify-content-center ng-valid ng-dirty ng-touched"><mat-radio-button value="None"
+                         class="mat-radio-button example-radio-button mat-accent" id="mat-radio-28">
+                         <label class="mat-radio-label" for="mat-radio-28-input">
+                           <input type="radio" class="mat-radio-input cdk-visually-hidden" 
+                           id="mat-radio-28-input" tabindex="0" name="mat-radio-group-26" 
+                           value="None">
+                          <span style="display: none;">&nbsp;</span>All Languages</label>
+                        </mat-radio-button>
+                        <mat-radio-button value="english" 
+                        class="mat-radio-button example-radio-button mat-accent"
+                         id="mat-radio-29">
+                         <label class="mat-radio-label" for="mat-radio-29-input">
+                         <input type="radio" class="mat-radio-input cdk-visually-hidden" 
+                         id="mat-radio-29-input" tabindex="0" name="mat-radio-group-26"
+                          value="english">
+                          <span mat-ripple="" class="mat-ripple mat-radio-ripple mat-focus-indicator">
+                            <span class="mat-ripple-element mat-radio-persistent-ripple"></span>
+                        </span>
+                        <span class="mat-radio-label-content">
+                            <span style="display: none;">&nbsp;</span>English</span>
+                        </label>
+                    </mat-radio-button>
+                    <mat-radio-button value="french" 
+                    class="mat-radio-button example-radio-button mat-accent mat-radio-checked" 
+                    id="mat-radio-30"><label class="mat-radio-label" for="mat-radio-30-input">
+                        <input type="radio" class="mat-radio-input cdk-visually-hidden" 
+                        id="mat-radio-30-input" tabindex="0" name="mat-radio-group-26" value="french">
+                    <span style="display: none;">&nbsp;</span>French</label>
+                </mat-radio-button>
+            </mat-radio-group>
+            <p class="badget">Price Budget</p><p class="line"></p>
+            <mat-radio-group role="radiogroup" aria-labelledby="example-radio-group-label" 
+            formcontrolname="budget" 
+            class="mat-radio-group example-radio-group d-flex flex-column justify-content-center ng-valid ng-dirty ng-touched">
+            <mat-radio-button value="0" class="mat-radio-button example-radio-button mat-accent mat-radio-checked" id="mat-radio-32"><label class="mat-radio-label" for="mat-radio-32-input">
+              <input type="radio" class="mat-radio-input cdk-visually-hidden" id="mat-radio-32-input" 
+              tabindex="0" name="mat-radio-group-30" value="0">
+              <span mat-ripple="" class="mat-ripple mat-radio-ripple mat-focus-indicator">
+                <span class="mat-ripple-element mat-radio-persistent-ripple"></span></span>
+                <span class="mat-radio-label-content">
+                    <span style="display: none;">&nbsp;</span>High To Low</span>
+                </label>
+            </mat-radio-button>
+            <mat-radio-button value="1" class="mat-radio-button example-radio-button mat-accent" 
+            id="mat-radio-33"><label class="mat-radio-label" for="mat-radio-33-input">
+                <input type="radio" class="mat-radio-input cdk-visually-hidden" id="mat-radio-33-input"
+                 tabindex="0" name="mat-radio-group-30" value="1">
+                 <span mat-ripple="" class="mat-ripple mat-radio-ripple mat-focus-indicator">
+                    <span class="mat-ripple-element mat-radio-persistent-ripple"></span></span>
+                    <span class="mat-radio-label-content">
+                        <span style="display: none;">&nbsp;</span>Low To High</span>
+                    </label>
+                </mat-radio-button>
+            </mat-radio-group>
+            <p class="skill">Skill Level</p><p class="line"></p>
+            <mat-radio-group role="radiogroup" aria-labelledby="example-radio-group-label" 
+            formcontrolname="skill"
+             class="mat-radio-group example-radio-group d-flex flex-column justify-content-center 
+             ng-untouched ng-pristine ng-valid">
+             <mat-radio-button value="None" class="mat-radio-button example-radio-button 
+             mat-radio-checked mat-accent" id="mat-radio-35">
+             <label class="mat-radio-label" for="mat-radio-35-input">
+                <span class="mat-radio-container">
+                    <input type="radio" class="mat-radio-input cdk-visually-hidden" 
+                    id="mat-radio-35-input" tabindex="0" name="mat-radio-group-33" value="None">
+                </span>
+                        <span class="mat-radio-label-content">
+                            <span style="display: none;">&nbsp;</span>All Levels(17) </span>
+                        </label></mat-radio-button><mat-radio-button value="master"
+                         class="mat-radio-button example-radio-button mat-accent" 
+                         id="mat-radio-36">
+                         <label class="mat-radio-label" for="mat-radio-36-input">
+                            <input type="radio" class="mat-radio-input cdk-visually-hidden"
+                             id="mat-radio-36-input" tabindex="0" name="mat-radio-group-33" value="master">
+                             <span mat-ripple="" class="mat-ripple mat-radio-ripple mat-focus-indicator">
+                                <span class="mat-ripple-element mat-radio-persistent-ripple"></span>
+                            </span>
+                            <span class="mat-radio-label-content">
+                                <span style="display: none;">&nbsp;</span>Master(4) </span></label>
+                            </mat-radio-button>
+                            <mat-radio-button value="bachelor"
+                             class="mat-radio-button example-radio-button mat-accent" 
+                             id="mat-radio-37"><label class="mat-radio-label"
+                              for="mat-radio-37-input">
+                            <input type="radio" class="mat-radio-input cdk-visually-hidden"
+                             id="mat-radio-37-input" tabindex="0" name="mat-radio-group-33"
+                             value="bachelor">
+                             <span mat-ripple=""
+                              class="mat-ripple mat-radio-ripple mat-focus-indicator">
+                              <span class="mat-ripple-element mat-radio-persistent-ripple"></span>
+                            </span><span class="mat-radio-label-content">
+                                <span style="display: none;">&nbsp;</span>Bachelor(13) </span>
+                            </label>
+                        </mat-radio-button>
+                        <mat-radio-button value="MBA" 
+                        class="mat-radio-button example-radio-button mat-accent" id="mat-radio-38">
+                        <label class="mat-radio-label" for="mat-radio-38-input">
+                            <input type="radio" class="mat-radio-input cdk-visually-hidden"
+                             id="mat-radio-38-input" tabindex="0" name="mat-radio-group-33" value="MBA">
+                             <span mat-ripple="" class="mat-ripple mat-radio-ripple mat-focus-indicator">
+                                <span class="mat-ripple-element mat-radio-persistent-ripple"></span>
+                            </span>
+                            <span class="mat-radio-label-content">
+                                <span style="display: none;">&nbsp;</span>MBA(0)</span>
+                            </label>
+                        </mat-radio-button>
+                        <mat-radio-button value="PHD" 
+                        class="mat-radio-button example-radio-button mat-accent" 
+                        style="margin-bottom: 100px;" id="mat-radio-39">
+                        <label class="mat-radio-label" for="mat-radio-39-input">
+                            <input type="radio" class="mat-radio-input cdk-visually-hidden"
+                             id="mat-radio-39-input" tabindex="0" name="mat-radio-group-33" value="PHD">
+                             <span mat-ripple="" class="mat-ripple mat-radio-ripple mat-focus-indicator">
+                                <span class="mat-ripple-element mat-radio-persistent-ripple"></span>
+                            </span><span class="mat-radio-label-content">
+                                <span style="display: none;">&nbsp;</span>PHD(0)</span>
+                            </label>
+                        </mat-radio-button>
+                    </mat-radio-group>
+                   </div>
+    
+                    <div class="col-xl-10 col-md-9 col-12 justify-content-center "  >
+                       <div class="row">
+                        <div class="col" *ngFor="let pp of programs | paginate: { itemsPerPage: count, currentPage: p }" >
+                            <div class="card" style="width: 16rem;" >
+                                <div class="card-header" style="background-color: rgb(202, 133, 223);">
+                                    {{pp.progName}}
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item " >{{pp.city}}</li>
+                                  <li class="list-group-item">{{pp.lang}}</li>
+                                  <li class="list-group-item">{{pp.category}}</li>
+                                  <li class="list-group-item">{{pp.level}}</li>
+    
+                                </ul>
+                              </div>
+                        </div>
+                       </div>
+                        
+                    </div>
+                    </div>
+                </section>
+                <div class="paginate">
+                    <div class="text-right">
+                      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                    </div>
+                  </div>
+                
+            </div>
+
+        </div>
+    </form>
+
+
+</section>

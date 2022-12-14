@@ -1,0 +1,89 @@
+.intro-section{
+
+    margin-top: 0;
+    background: #0000 linear-gradient(113deg,#6f77f414,#fd828214) no-repeat padding-box;
+    padding: 0;
+    margin-top: 95px;
+    font: normal normal 400 35px/55px Poppins;
+    text-align: left;
+}
+.intro-title span {
+    font: normal normal 600 35px/55px Poppins;
+    font-weight: bold;
+}
+
+.desc {
+    margin-top: 28px;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Poppins;
+    text-align: left;
+    letter-spacing: 0;
+}
+
+.intro-section .container button {
+    width: 170px;
+    height: 52px;
+    background: #0000 linear-gradient(180deg,#ff5151,#6f77f4) 0 0 no-repeat padding-box;
+    border-radius: 8px;
+    font: normal normal 600 20px Poppins;
+    color: #fff;
+    border: none;
+}
+
+a:before 
+{
+    box-sizing: border-box;
+}
+
+
+.programs-container .popular-title {
+    margin-bottom: 0;
+    font: normal normal 400 40px Poppins;
+    text-transform: capitalize;
+}
+
+.programs-container .programs-number {
+    margin-top: 3px;
+    font: normal normal 18px Poppins;
+    font-weight: 400;
+    color: #555454;
+}
+
+
+form{
+    margin-top: 20px;
+}
+
+div{
+    margin-top: 15px;
+}
+
+.dropdown{
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 20px;
+}
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+p,hr{
+    font-weight: 500;
+}
+.paginate{
+    align-content: center;
+    margin-left: 200px;
+}
+
+mat-radio-group{
+    margin-bottom: 40px;
+}
+.card{
+    width: 35%;
+
+}
+
